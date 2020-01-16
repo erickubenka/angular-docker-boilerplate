@@ -1,0 +1,21 @@
+version: "3"
+services:
+  node:
+    image: "automation-example/automation-example:latest"
+    user: "node"
+    container_name: automation-example-app
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=dev
+    volumes:
+      - ./:/home/node/app
+    ports:
+      - "4200:4200"
+    command:
+      - /bin/bash
+      - -c
+      - |
+        ng new automation-example-app
+        cd automation-example-app/
+        npm install
+        npm start
