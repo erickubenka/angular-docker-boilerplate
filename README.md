@@ -10,6 +10,7 @@ The following commands will show you, how to build up an docker image with few s
 ### Build container image and start
 ````
 # Clone this repostitory
+# Edit Dockerfile and replace the github credentials with your own.
 docker build -t code-fever/angular-app:latest .
 docker-compose up -d
 docker logs angular-app -f

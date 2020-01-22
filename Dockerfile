@@ -5,7 +5,7 @@ MAINTAINER Eric Kubenka<ek@code-fever.de>
 EXPOSE 8888
 
 # replace with your credentials
-RUN git config --global user.email "ek@code-fever.de" && \
-git config --global user.name "Eric Kubenka"
+RUN git config --global user.email "example@example.com" && \
+git config --global user.name "Mr. Example"
 
 RUN npm install -g @angular/cli
