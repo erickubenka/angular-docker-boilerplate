@@ -1,9 +1,9 @@
 version: "3"
 services:
   node:
-    image: "automation-example/automation-example:latest"
+    image: "code-fever/docker-angular:latest"
     user: "node"
-    container_name: automation-example-app
+    container_name: angular-app
     working_dir: /home/node/app
     environment:
       - NODE_ENV=dev
@@ -15,7 +15,7 @@ services:
       - /bin/bash
       - -c
       - |
-        ng new automation-example-app
-        cd automation-example-app/
+        ng new angular-app
+        cd angular-app/
         npm install
         npm start
