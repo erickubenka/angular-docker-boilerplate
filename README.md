@@ -1,4 +1,4 @@
-# code-fever/angular-docker-boilerplate
+# erickubenka/angular-docker-boilerplate
 With this repository you can develop node and npm based angular applications without installing node to your local machine. You just set up the new application with the following instructions.
 
 # Getting Started
