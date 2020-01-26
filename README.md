@@ -42,3 +42,8 @@ docker logs angular-app -f
 That's it! - Hang over to http://localhost:4200 on your machine!
 
 
+# Troublehsooting
+
+## ng-serve does not update on soruce change
+Sometimes `ng serve` wont recognize your changes and wont refresh your page while you are changen some files in `src/`. Therefore you can add the `--poll=2000` option to your `ng serve` command in your `package.json`. This should fix this by adding a polling mechanism to the given sources.
+
