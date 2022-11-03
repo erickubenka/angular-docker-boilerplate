@@ -21,7 +21,7 @@ docker logs angular-app -f
 No you can try to access http://localhost:4200. If you can't reach the website, then please try the following:
 ````
 docker-compose down
-# Now change /anuglar-app/package.json line "ng-serve" to "ng serve --host 0.0.0.0"
+# Now change /anuglar-app/package.json line "ng-serve" to "ng serve --host 0.0.0.0 --watch false --poll=1500"
 docker-compose up -d
 ````
 Now you are fine. Visit http://localhost:4200 again and you should see a fresh angular app running.
