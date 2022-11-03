@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:18
 LABEL author="Eric Kubenka<code@code-fever.de>"
 
 # replace this with your application's default port
